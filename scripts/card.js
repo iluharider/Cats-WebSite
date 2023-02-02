@@ -13,6 +13,9 @@ class catCard {
         this.cardTitle = this.element.querySelector('.card__name');
         this.cardImage = this.element.querySelector('.card__image');
         this.cardLiked = this.element.querySelector('.card__like');
+        this.cardDelete = this.element.querySelector('.card__delete');
+        this.cardDelete.classList.add(`${this._data.id}`)
+
 
         if (!this._data.favorite) {
             this.cardLiked.remove();

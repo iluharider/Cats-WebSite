@@ -63,3 +63,16 @@
     transition: .5s linear;
     transition-property: backdrop-filter, background-color;
   }
+
+  .card__delete {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    color: var(--bg-secondary-color);
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
