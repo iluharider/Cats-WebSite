@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/41a33e7d82.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <title>Cats table</title>
 </head>
@@ -70,11 +71,33 @@
     </div>
 </template>
 
+<template id="cats-info-template">
+    <div class="cat-info">
+        <button class="cat-info__edited"><i class="fa-regular fa-pen-to-square"></i>Редактировать</button>
+        <button class="cat-info__saved cat-info__saved_hidden"><i class="fa-regular fa-pen-to-square"></i>Сохранить</button>
+        <button class="cat-info__deleted"><i class="fa-solid fa-trash"></i>Удалить</button>
+
+        <img src="#" class="cat-info__image" loading="lazy">
+        <span class="cat-info__id"></span>
+        <div class="cat-info__title">
+            <h2 class="cat-info__name"></h2>
+            <button class="cat-info__favourite"><i class="fa-solid fa-heart fa-2x"></i></button>
+        </div>
+        <span class="cat-info__rate"></span>
+        <div class="cat-info__age">
+            <span class="cat-info__age-val"></span>
+            <span class="cat-info__age-text"></span>
+        </div>
+        <p class="cat-info__desc"></p>
+    </div>
+</template>
+
 <script src="./scripts/api.js"></script>
 <script src="./scripts/cats.js"></script>
 <script src="./scripts/utilities.js"></script>
+<script src="./scripts/cats-info.js"></script>
 <script src="./scripts/card.js"></script>
 <script src="./scripts/popup.js"></script>
-<script src="./scripts/index.js"></script>
+<script src="./scripts/index.js" type="module"></script>
 
 </html>

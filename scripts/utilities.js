@@ -1,8 +1,3 @@
-function createCat(data) {
-    const cardInstance = new catCard(data, '#card-template');
-    const newCardElement = cardInstance.getElement();
-    cardsContainer.append(newCardElement);
-}
 
 function serializeForm(data) {
     const formData = {};

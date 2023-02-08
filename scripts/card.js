@@ -1,7 +1,8 @@
 class catCard {
-    constructor(dataCat, selectorTemplate) {
+    constructor(dataCat, selectorTemplate, handleCatTitle) {
         this._data = dataCat;
         this._selectorTemplate = selectorTemplate;
+        this._handleCatTitle = handleCatTitle;
     }
 
     _getTemplate() {
@@ -25,6 +26,11 @@ class catCard {
         this.cardTitle.textContent = this._data.name;
 
         return this.element;
+    }
+
+    setEventListener() {
+        console.log('', this.cardTitle);
+        this.cardTitle.addEventListener('click', () => this._handleCatTitle(this));
     }
 }
 
