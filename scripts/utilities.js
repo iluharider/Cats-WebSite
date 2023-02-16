@@ -1,5 +1,4 @@
-
-function serializeForm(data) {
+export function serializeForm(data) {
     const formData = {};
 
     data.forEach((input) => {

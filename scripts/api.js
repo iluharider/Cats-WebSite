@@ -61,7 +61,7 @@ class Api {
   }
 }
 
-const api = new Api(configApi);
+export const api = new Api(configApi);
 // console.log(api);
 
 // const newCat = {
@@ -87,4 +87,4 @@ const api = new Api(configApi);
 
 // api.deleteCatById(1673690003098);
 
-api.updateCatById(23498333, {image: "https://http.cat/504"})
+// api.updateCatById(23498333, {image: "https://http.cat/504"})
